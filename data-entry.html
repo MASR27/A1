@@ -1,0 +1,47 @@
+---
+layout: default
+title: Data Entry - Gas Station Compliance App
+---
+
+<main>
+  <section id="data-entry">
+    <h2>Data Entry</h2>
+    <p>Use this page to enter data related to your gas station's compliance with ISO 10012:2003:</p>
+    <form>
+      <label for="equipment-name">Equipment Name</label>
+      <input type="text" id="equipment-name" name="equipment-name" required>
+
+      <label for="equipment-id">Equipment ID</label>
+      <input type="text" id="equipment-id" name="equipment-id" required>
+
+      <label for="calibration-frequency">Calibration Frequency</label>
+      <select id="calibration-frequency" name="calibration-frequency" required>
+        <option value="">--Please select--</option>
+        <option value="6 months">6 months</option>
+        <option value="12 months">12 months</option>
+        <option value="24 months">24 months</option>
+      </select>
+
+      <label for="last-calibration-date">Last Calibration Date</label>
+      <input type="date" id="last-calibration-date" name="last-calibration-date" required>
+
+      <label for="next-calibration-due-date">Next Calibration Due Date</label>
+      <input type="date" id="next-calibration-due-date" name="next-calibration-due-date" required>
+
+      <label for="traceability-document-number">Traceability Document Number</label>
+      <input type="text" id="traceability-document-number" name="traceability-document-number" required>
+
+      <label for="maintenance-notes">Maintenance Notes</label>
+      <textarea id="maintenance-notes" name="maintenance-notes" rows="4"></textarea>
+
+      <label for="repair-notes">Repair Notes</label>
+      <textarea id="repair-notes" name="repair-notes" rows="4"></textarea>
+
+      <label for="authorized-personnel">Authorized Personnel</label>
+      <input type="text" id="authorized-personnel" name="authorized-personnel" required>
+
+      <input type="submit" value="Save">
+      <input type="reset" value="Reset">
+    </form>
+  </section>
+</main>
